@@ -355,6 +355,7 @@ mod test {
         Ok(())
     }
 
+#[cfg(target_os = "linux")]
     #[test]
     fn test_proc_mounts() {
         assert!(test_file("/proc/mounts").is_ok());

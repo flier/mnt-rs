@@ -14,6 +14,8 @@
 
 pub use error::*;
 pub use parse::*;
+pub use process::{MountEntry as ProcMountEntry, *};
 
 mod error;
 mod parse;
+mod process;
